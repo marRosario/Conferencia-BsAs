@@ -1,0 +1,452 @@
+
+:root{
+
+    --colornav: rgb(56, 59, 64);
+    --colorenlace:rgb(255, 255, 255);
+    --colorcomprar: rgb(0, 255, 0);
+    --colorotroenlace: rgb(170, 174, 181);
+    --colortresenlaces: rgb(113, 115, 120);
+    --colorbtn:rgb(136, 204, 0) ;
+    --colorfooter: rgb(0, 51, 77);
+    --colordegradado:rgb(0, 85, 128);
+    --colortarjP:rgb(0, 102, 255);
+    --colortarjS:rgb(0, 204, 153);
+    --colortarjT:rgb(255, 255, 102);
+    --colorpagar:rgb(179, 218, 255) ;
+    --colorBresumen:rgb(136, 204, 0);
+    
+    }
+    
+    *{
+        Margin: 0;
+        Padding: 0;
+        box-sizing: border-box; 
+        
+      }
+      
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    
+    
+      
+      html{
+        font-size: 18px;
+        font-family : 'Montserrat', sans-serif;      
+        
+      }
+    .nav-primera{
+    background-color: var(--colornav);
+    
+    }  
+    
+    .nav-primera ul {
+      margin-left: auto; 
+    }
+    
+    .nav-primera ul li a{
+    padding: 10px 20px;
+    font-size: 20px
+    
+        }  
+    
+    
+    
+    a.navbar-brand{
+    margin:0px 5px 0px 0px;
+    padding:2px;
+    }
+    
+    .nav-primera a{
+    color: var(--colorenlace);
+    text-align: center;
+    font-size: 20px;
+    }
+
+    .custom-link{
+        color: var(--colorenlace)!important;
+
+    } 
+
+
+    
+    .nav-primera .green{
+        color: var(--colorcomprar);
+        font-size: 20px; /* Opcional: Tamaño más grande para el enlace de 'Comprar tickets' */
+      
+        
+    }
+    
+
+
+    
+    .brand-text {
+      font-size: 24px; 
+      color: var(--colorenlace); 
+      margin-left: 10px;
+      text-decoration: none; 
+    }
+    
+    
+    @media screen and (max-width:700px){
+    
+        nav{
+          flex-direction: column;
+        }
+      }
+    
+      img{
+       filter: brightness(0.7);
+    
+      }
+      .imagen p{
+    color: var(--colorenlace);
+    margin-right: 110px;
+    text-align:right;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 16px;
+    
+      }
+    
+    
+    
+      .imagen h3{
+        color:var(--colorenlace);
+        text-align: right;
+        margin-right: 115px;
+        
+      }
+      .imagen {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      
+      .imagen img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      
+      .imagen div {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: translate(0, -50%);
+        text-align: right;
+        
+      }
+      
+      
+      @media only screen and (max-width: 768px) {
+        .imagen div {
+          position: static;
+          transform: none;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          
+        }
+        .imagen p{
+          text-align:center;
+          line-height: 1;
+          margin-right: 50px;
+          font-size: 12px;
+          
+          }
+    .imagen h3{
+      text-align: center;
+      font-size: 18px;
+    }
+     
+   
+    .btn-small{
+        font-size: 16px;
+        padding: 3px 5px;
+       
+    }
+
+      }
+      
+    
+    
+    
+    
+    
+      .btn-secondary{
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 4.5px 9px;
+      margin-right: 2px;
+      margin-top:20px;
+      
+      }
+    
+      .btn-secondary:hover{
+        background-color: transparent;
+    
+      }
+    .btn-custon{
+       background-color: var(--colorcomprar); 
+       color: var(--colorenlace);
+      margin-right: 110px;
+      margin-top: 20px;
+      
+     
+    }
+    
+    /* Estilos generales */
+    .imagen {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    .imagen img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+    
+    
+    /*------------------------*/
+    
+    
+    .titulo {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap;
+        margin-top: 50px;
+      }
+      
+    
+    
+    .btn-info {
+    background-color: gray;
+    color: var(--colorenlace);
+    margin-top: 1px;
+    border-style: none;
+    }
+    
+    .custom-button{
+     width: 25%;
+    
+    }
+
+    
+    .card1 {
+        margin: 0;
+        padding: 0;
+    } 
+   
+    .card-img-top{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+        }
+        
+    
+
+      .card-body {
+        padding: 15px; /* Añade algo de padding dentro de la tarjeta */
+      }
+
+
+    .image-container {
+      border: 1px solid white;
+    }
+    
+    .mt-espaciado {
+      margin-top: 30px; 
+    }
+    
+    
+    
+    
+    .informe p{
+      text-align: center;
+     margin-bottom: 2px;
+      }
+      h3{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 2px;
+      }
+     span{
+        text-decoration: underline dotted;
+      }
+
+      .container2 {
+        width: 90%; /* Cambia este porcentaje según lo necesites */
+        max-width: 1200px; /* Limita el tamaño máximo */
+        margin: auto; /* Centra el contenedor */
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten */
+        gap: 20px;
+
+      }
+      
+      
+      .card {
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos se apilen */
+        justify-content: center; /* Centra verticalmente el contenido */
+        align-items: center; /* Centra horizontalmente el contenido */
+        text-align: center; 
+        margin-top: 50px;
+      
+        
+    
+      }
+
+      .card-title{
+        margin-bottom: 20px;
+    }
+
+
+    .porcentaje{
+        margin-top: 30px;
+
+      }
+
+   .card-text{
+
+    margin-top: 30px;
+}
+
+
+      .blue-border {
+        border: 2px solid var(--colortarjP); /* Azul */
+      }
+      
+      .green-border {
+        border: 2px solid var(--colortarjS); /* Verde */
+      }
+      
+      .yellow-border {
+        border: 2px solid var(--colortarjT); /* Amarillo */
+      }
+     
+
+      @media (max-width: 600px) {
+        .card {
+          flex: 1 1 100%; /* Cada tarjeta ocupará el 100% del ancho disponible */
+        }
+
+
+        .btn-small{
+           
+            font-size: 14px;
+            padding: 6px 8px;
+            margin-top: 0px;
+          
+    
+    
+        }
+    
+
+
+      }
+
+      .titulos {
+        display: flex; /* Permite el uso de alineación flexible */
+        flex-direction: column; /* Alinea los elementos uno debajo del otro */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Centra el texto dentro de los elementos */
+        height: 100%; /* Ajusta según el contenedor */
+        margin-top: 50px;
+      }
+      
+
+      #inputNombre, #inputApellido {
+        border: 1px solid var(--bs-border-color);
+        padding: 8px; /* Relleno adicional */
+        border-radius: 5px; /* Bordes redondeados */
+        width: 75%;
+      }
+      
+      textarea {
+     
+        border-radius: 5px; /* Bordes redondeados */
+        padding: 10px; /* Relleno adicional */
+        border: 1px solid var(--bs-border-color);
+
+      }
+      
+      .btn-success {
+        background-color: var(--colorbtn);
+        margin: 10px 0; /* Margen superior e inferior */
+        padding: 8px 15px; /* Ajusta el tamaño del botón */
+        font-size: 14px; /* Tamaño del texto más pequeño */
+        border-radius: 5px; /* Esquinas más redondeadas */
+        margin-bottom: 50px;
+        
+    }
+    
+    #myButton {
+        gap: 20px; /* Separación entre los botones */
+    }
+    
+    #myButton .btn-success {
+        width: 80%; /* Reduce el ancho de los botones */
+        margin: 0 auto; /* Centra los botones dentro de sus contenedores */
+    }
+
+
+    
+      #inputNombre2, #inputApellido2, #inputCantidad, #inputState, #inputTotalAPagar, #inputEmail1 {
+        width: 100%; /* Aseguramos que todos los campos tengan el mismo ancho */
+        margin-left: 0;
+        margin-right: 0;
+        display: block; /* Para que todos los campos se comporten de la misma forma */
+      }
+      
+      /* Ajustes específicos para los campos */
+      #inputCantidad, #inputState, #inputTotalAPagar, #inputEmail1 {
+        margin-top: 0.2cm; /* Mantener margen superior */
+        margin-bottom: 0.5cm; /* Añadir margen inferior para separación */
+      }
+      
+      .my-class {
+        margin-left: 0; /* Eliminar el margen izquierdo adicional */
+        margin-bottom: 0.2cm;
+      }
+      
+      .my-pago {
+        margin-left: 0; /* Eliminar margen izquierdo */
+      }
+    
+      footer {
+        background: linear-gradient(45deg, #2968a7, #2a639d, #14518d); /* Degradado azul oscuro */
+        color: white; /* Asegura que el texto sea visible */
+      }
+      
+      .footer-link {
+        color: white; /* Ajusta el color de los enlaces */
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .footer-link:hover {
+        text-decoration: underline; /* Estilo al pasar el mouse */
+      }
+      
+      footer .row {
+        text-align: center; /* Centra el contenido */
+      }
